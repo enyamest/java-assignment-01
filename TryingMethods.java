@@ -57,7 +57,15 @@ public class TryingMethods {
 
     private static int sumOneToNineHundred() {
 
-        return 0;
+        int sum = 0;
+        int count = 0;
+
+        while(count < 1000){
+            count = count + 1;
+            sum = sum + count;
+        }
+
+        return sum;
     }
 
     private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree() {

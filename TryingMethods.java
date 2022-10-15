@@ -43,7 +43,15 @@ public class TryingMethods {
         return dayOfweek;
     }
 
-    private void discoverGender() {
+    private void discoverGender(String gender) {
+
+        if (gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("m")) {
+            System.out.println("Your are a man");
+        } else if (gender.equalsIgnoreCase("female") || gender.equalsIgnoreCase("f")){
+            System.out.println("Your are a lady");
+        } else {
+            System.out.println("You are not human!");
+        } 
 
     }
 

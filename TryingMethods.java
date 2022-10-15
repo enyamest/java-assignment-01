@@ -18,4 +18,14 @@ public class TryingMethods {
 
     }
 
+    private static int sumOneToNineHundred(){
+
+        return 0;
+    }
+
+    private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree(){
+
+        return 0;
+    }
+
 }

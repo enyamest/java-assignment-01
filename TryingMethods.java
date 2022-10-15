@@ -70,7 +70,13 @@ public class TryingMethods {
 
     private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree() {
 
-        return 0;
+        int sum = 0;
+
+        for (int i = 12; i < 103; i+=2) {
+            sum = sum + i;
+        }
+
+        return sum;
     }
 
 }

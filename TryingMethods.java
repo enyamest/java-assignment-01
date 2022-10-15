@@ -9,21 +9,50 @@ public class TryingMethods {
 
     }
 
-    private String getDayOfWeek() {
+    private String getDayOfWeek(int day) {
+        
+        String dayOfweek;
 
-        return EMPTY_STRING;
+        switch (day) {
+            case 1:
+                dayOfweek = "Sunday";
+                break;
+            case 2:
+                dayOfweek = "Monday";
+                break;
+            case 3:
+                dayOfweek = "Tuesday";
+                break;
+            case 4:
+                dayOfweek = "Wednesday";
+                break;
+            case 5:
+                dayOfweek = "Thursday";
+                break;
+            case 6:
+                dayOfweek = "Friday";
+                break;
+            case 7:
+                dayOfweek = "Saturday";
+                break;
+            default:
+                dayOfweek = EMPTY_STRING;
+                break;
+        }
+
+        return dayOfweek;
     }
 
     private void discoverGender() {
 
     }
 
-    private static int sumOneToNineHundred(){
+    private static int sumOneToNineHundred() {
 
         return 0;
     }
 
-    private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree(){
+    private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree() {
 
         return 0;
     }

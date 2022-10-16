@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 /**
  * TryingMethods is a playground for practicing methods usage in Java
  */
@@ -10,7 +12,7 @@ public class TryingMethods {
     }
 
     private String getDayOfWeek(int day) {
-        
+
         String dayOfweek;
 
         switch (day) {
@@ -47,11 +49,11 @@ public class TryingMethods {
 
         if (gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("m")) {
             System.out.println("Your are a man");
-        } else if (gender.equalsIgnoreCase("female") || gender.equalsIgnoreCase("f")){
+        } else if (gender.equalsIgnoreCase("female") || gender.equalsIgnoreCase("f")) {
             System.out.println("Your are a lady");
         } else {
             System.out.println("You are not human!");
-        } 
+        }
 
     }
 
@@ -60,7 +62,7 @@ public class TryingMethods {
         int sum = 0;
         int count = 0;
 
-        while(count < 1000){
+        while (count < 1000) {
             count = count + 1;
             sum = sum + count;
         }
@@ -72,11 +74,23 @@ public class TryingMethods {
 
         int sum = 0;
 
-        for (int i = 12; i < 103; i+=2) {
+        for (int i = 12; i < 103; i += 2) {
             sum = sum + i;
         }
 
         return sum;
+    }
+
+    private static BigInteger findFactorial(int num) {
+
+        BigInteger sum = new BigInteger("1");
+
+        for (int i = 1; i <= num; i++) {
+            sum = sum.multiply(BigInteger.valueOf(i));
+        }
+
+        return sum;
+
     }
 
 }

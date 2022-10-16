@@ -57,12 +57,26 @@ public class TryingMethods {
 
     private static int sumOneToNineHundred() {
 
-        return 0;
+        int sum = 0;
+        int count = 0;
+
+        while(count < 1000){
+            count = count + 1;
+            sum = sum + count;
+        }
+
+        return sum;
     }
 
     private static int sumOfEvenNumbersBetweenTwelveAndOneHundredAndThree() {
 
-        return 0;
+        int sum = 0;
+
+        for (int i = 12; i < 103; i+=2) {
+            sum = sum + i;
+        }
+
+        return sum;
     }
 
 }
